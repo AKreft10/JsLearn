@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            imie: "Marek",
+            nazwisko: "Mostowiak",
+            wiek: "17",
+            miasto: "warszawa",
+            kodPocztowy: "61-113",
+            kraj: "Polska",
+
+            getName: function()
+            {
+                return this.imie + " " + this.nazwisko;
+            }
+        }
+
+        console.log(person.getName())
+
+        function getNewPerson(name, surname, age){
+            return {
+                name: name,
+                surname:surname,
+                age:age
+            };
+        }
+
+        const lukasz = getNewPerson("Łukasz","Kowal","13");
+        console.log(lukasz.name + " " + lukasz.surname + " " + lukasz.age)
+
+    </script>
+</body>
+</html>
